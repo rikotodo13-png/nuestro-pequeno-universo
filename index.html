@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro pequeño universo 💙</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Pantalla de bienvenida -->
+  <section id="welcomeScreen" class="welcome-screen">
+    <div class="stars-background"></div>
+
+    <div class="welcome-card">
+      <p class="small-text">Un lugar creado para nosotros</p>
+      <h1>Nuestro pequeño universo 💙</h1>
+      <h2>¡Felices 5 meses, mi nañio! ✨</h2>
+      <p>Un pequeño universo lleno de recuerdos, momentos y mucho cariño.</p>
+
+      <input type="password" id="passwordInput" placeholder="Escribe la contraseña">
+      <button id="enterButton">Entrar a nuestro universo</button>
+      <p id="errorMessage"></p>
+      <p class="hint">Pista: siempre lo uso</p>
+    </div>
+  </section>
+
+  <!-- Página principal -->
+  <main id="mainContent" class="hidden">
+
+    <header class="hero">
+      <p class="small-text">25 de junio · 25 de noviembre</p>
+      <h1>Nuestro pequeño universo 💙</h1>
+      <h2>¡Felices 5 meses, mi nañio! 🌙</h2>
+      <p>Desde que nuestros caminos se cruzaron en Genshin, comenzó una historia muy bonita.</p>
+    </header>
+
+    <section class="section">
+      <h2>🌌 Nuestro universo</h2>
+      <p class="section-intro">Cada planeta guarda una parte de nuestra historia.</p>
+      <div id="planetsContainer" class="planets-grid"></div>
+    </section>
+
+    <section class="section">
+      <h2>💌 Cartitas para ti</h2>
+      <p class="section-intro">Abre cada sobre para descubrir lo que guarda.</p>
+      <div id="lettersContainer" class="letters-grid"></div>
+    </section>
+
+    <section class="section">
+      <h2>📸 Nuestros recuerdos</h2>
+      <p class="section-intro">Pequeños momentos que forman parte de nuestra historia.</p>
+      <div id="photosContainer" class="photos-grid"></div>
+    </section>
+
+    <section class="section">
+      <h2>🎧 Nuestra música</h2>
+      <p class="section-intro">Dos canciones para acompañar nuestro pequeño universo.</p>
+      <div id="musicContainer" class="music-grid"></div>
+      <div class="player-wrap">
+        <iframe
+          id="musicPlayer"
+          src="https://www.youtube-nocookie.com/embed/FgMYAz6pTNk?autoplay=0&rel=0"
+          title="Nuestra música"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="music-note">Si la música no comienza automáticamente, toca una de las canciones. 💙</p>
+    </section>
+
+    <section class="section">
+      <h2>⭐ Encuentra nuestras cinco estrellas</h2>
+      <p class="section-intro">Toca cada estrella para descubrir un mensajito.</p>
+      <div id="starsContainer" class="stars-game"></div>
+      <p id="starProgress">Estrellas encontradas: 0/5</p>
+      <div id="starMessage" class="message-box"></div>
+    </section>
+
+    <section class="section final-section">
+      <h2>🎁 Una última sorpresa</h2>
+      <p>El nañio ha encontrado un pequeño regalo...</p>
+
+      <div class="pixel-scene">
+        <div class="pixel-house">
+          <div class="house-roof"></div>
+          <div class="house-body">
+            <div class="house-window"></div>
+            <div class="house-door"></div>
+          </div>
+        </div>
+        <div class="pixel-heart">💙</div>
+        <button id="chestButton" class="chest-button" aria-label="Abrir el cofre">
+          🎁
+        </button>
+      </div>
+
+      <p class="small-text">Toca el regalito para abrirlo.</p>
+    </section>
+
+    <footer>
+      <p>Hecho con cariño por tu ñañia. 💙</p>
+      <p>Por muchos recuerdos más, mi nañio. ✨</p>
+    </footer>
+
+  </main>
+
+  <!-- Ventana de mensajes -->
+  <div id="messageModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close-button">×</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
